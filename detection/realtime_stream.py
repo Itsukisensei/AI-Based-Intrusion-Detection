@@ -184,7 +184,7 @@ class RealtimeCloudStreamSimulator:
                     try:
                         df_existing = pd.read_csv(LIVE_STREAM_LOG_PATH)
                         df_combined = pd.concat([df_existing, df_event], ignore_index=True)
-                        df_combined.tail(200).to_csv(LIVE_STREAM_LOG_PATH, index=False)
+                        df_combined.tail(2000).to_csv(LIVE_STREAM_LOG_PATH, index=False)
                     except Exception:
                         df_event.to_csv(LIVE_STREAM_LOG_PATH, index=False)
                 else:

@@ -959,7 +959,7 @@ Login 9 AM<br>Access 10 files<br>Logout 6 PM
             if LIVE_STREAM_LOG_PATH.exists() and LIVE_STREAM_LOG_PATH.stat().st_size > 0:
                 try:
                     df_ex = pd.read_csv(LIVE_STREAM_LOG_PATH)
-                    pd.concat([df_ex, df_e], ignore_index=True).tail(200).to_csv(LIVE_STREAM_LOG_PATH, index=False)
+                    pd.concat([df_ex, df_e], ignore_index=True).tail(2000).to_csv(LIVE_STREAM_LOG_PATH, index=False)
                 except Exception:
                     df_e.to_csv(LIVE_STREAM_LOG_PATH, index=False)
             else:
