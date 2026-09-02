@@ -23,3 +23,4 @@ Thumbs.db
 
 # Large runtime logs
 *.log
+cloudflared.exe
