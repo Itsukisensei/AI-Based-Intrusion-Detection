@@ -1,5 +1,7 @@
 # 🛡️ AI-Based Intrusion Detection & User Behavior Analytics (UBA)
 
+[![Deploy to Streamlit Cloud](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=Itsukisensei/AI-Based-Intrusion-Detection&branch=main&mainModule=dashboard/app.py)
+
 > 🔒 **PROPRIETARY & ANTI-THEFT NOTICE**  
 > **Copyright © 2026 Itsukisensei. All Rights Reserved.**  
 > This software architecture, ensemble detection algorithms, explainable AI pipelines, and SOC interface designs are proprietary. **Unauthorized copying, stealing, commercial exploitation, redistribution, or claiming false authorship is strictly prohibited** under international copyright conventions and DMCA guidelines. See [`LICENSE`](LICENSE) for legally binding terms.
