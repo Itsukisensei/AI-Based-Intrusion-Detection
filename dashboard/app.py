@@ -9,6 +9,7 @@ import sys
 import os
 import socket
 import psutil
+import random
 from pathlib import Path
 from datetime import datetime
 
@@ -298,7 +299,7 @@ def get_host_telemetry():
         mem = psutil.virtual_memory()
         net = psutil.net_io_counters()
         hostname = socket.gethostname()
-        username = os.getenv("USERNAME", "lenovo")
+        username = os.getenv("USERNAME") or os.getenv("USER") or "cloud-operator"
         pids = psutil.pids()
 
         procs = []
